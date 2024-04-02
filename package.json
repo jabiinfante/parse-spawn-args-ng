@@ -1,0 +1,39 @@
+{
+  "name": "parse-spawn-args-ng",
+  "version": "1.0.0",
+  "description": "Parse and escape any string into recognized spawn arguments",
+  "type": "module",
+  "scripts": {
+    "generate-parser": "pegjs --output src/parser.cjs src/parser.pegjs & echo 'Plase fix i variable declaration on ~line 146'",
+    "build": "node build"
+  },
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/cjs.js"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*js",
+    "dist/*map",
+    "dist/*.d.ts",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "cli",
+    "parser",
+    "argument",
+    "spawn"
+  ],
+  "author": "jabiinfante@gmail.com",
+  "bugs": {
+    "url": "https://github.com/jabiinfante/parse-spawn-args-ng/issues"
+  },
+  "homepage": "https://github.com/jabiinfante/parse-spawn-args-ng",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "esbuild-plugin-d.ts": "^1.2.3",
+    "pegjs": "^0.10.0"
+  }
+}
