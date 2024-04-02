@@ -24,7 +24,7 @@ parse('-port 80 --title "this is a title"')
 ### parse args with quote escape
 ```
 var parse = require('parse-spawn-args').parse
-parse('-port 80 --title "this is a \\"title\\"')
+parse('-port 80 --title "this is a \\"title\\""')
 /*
     [
         '-port',
